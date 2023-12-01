@@ -55,7 +55,7 @@ public class CartPage extends BasePage{
         }
 
         driver.switchTo().frame(driver.findElement(By.cssSelector("#wiz-iframe-intent")));
-      //  wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id(generateIDLocator(this.closeele))))).click();
+        //  wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id(generateIDLocator(this.closeele))))).click();
        // WebElement close=((JavascriptExecutor) driver).executeScript("window.frameElement.contentDocument.getElementsByClassName(\"close\")[0];");
         driver.findElement(By.cssSelector(".close")).click();
         driver.switchTo().defaultContent();
